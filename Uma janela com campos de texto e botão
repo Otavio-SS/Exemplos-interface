@@ -1,0 +1,30 @@
+import java.awt.FlowLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class TextFieldFrame {
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Campos de Texto");
+        frame.setLayout(new FlowLayout());
+        
+        JLabel label1 = new JLabel("Nome:");
+        JTextField textField1 = new JTextField(20);
+        
+        JLabel label2 = new JLabel("Idade:");
+        JTextField textField2 = new JTextField(5);
+
+        JButton button = new JButton("Enviar");
+
+        frame.setSize(350, 150);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(label1);
+        frame.add(textField1);
+        frame.add(label2);
+        frame.add(textField2);
+        frame.add(button);
+        frame.setVisible(true);
+    }
+}
