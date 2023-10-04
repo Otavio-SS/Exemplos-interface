@@ -1,0 +1,17 @@
+//Uma simples janela com um botão
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class SimpleButtonFrame {
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Botão Simples");
+        JButton button = new JButton("Clique-me!");
+
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(button);
+        frame.setVisible(true);
+    }
+}
